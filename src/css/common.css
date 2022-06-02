@@ -86,3 +86,55 @@ img{
   color: white;
   border-radius: 20%;
 }
+
+.input-data{
+  border: darkgreen 3px solid;
+  height: 40px;
+  width: 280px;
+  font-size: 18px;
+}
+
+.form-container{
+  display: flex;
+  width: 609px;
+  padding: 17px;
+  border: #4CAF50 3px dashed;
+  margin-left: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.form-label:nth-child(4n-1){
+  margin-right: 0px;
+}
+
+.form-button{
+  margin-top: 15px;
+  width: 200px;
+  height: 60px;
+  background-color: #4CAF50;
+  border: 3px solid darkgreen;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.form-input{
+  margin-top: 5px;
+  height: 30px;
+  border: darkgreen 3px solid;
+}

@@ -14,16 +14,16 @@ const options = {
     time_24hr: true,
     defaultDate: new Date(),
     minuteIncrement: 1,
-    onClose(selectedDates) {
+    onClose([selectedDates]) {
       const currentDate = Date.now();
 
-    if (currentDate < selectedDates) {
-      startButton.disabled = false;
+    if (currentDate > selectedDates) {
+        startButton.disabled = true;
+        window.alert('Please choose a date in the future');
+          console.log("Incorrect date")
       return;
     }
-    startButton.disabled = true;
-    window.alert('Please choose a date in the future');
-      console.log("Incorrect date")
+    startButton.disabled = false;
   },
   };
 
